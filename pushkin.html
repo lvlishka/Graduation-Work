@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pushkin-styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="files/source/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/source/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/source/favicon-16x16.png">
+
+    <title>Pushkin</title>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <header>
+            <div class="header container">
+                <a class="header-logo" href="#"><img src="images/logo.png" alt="logo"></a>
+
+                <div class="buttons">
+                    <button class="log-in" type="button">Войти</button>
+                    <button class="basket" type="button"><img src="images/basket.png" alt="basket"></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Button up -->
+        <div class="container">
+            <a href="#">
+                <button class="button-up"></button>
+            </a>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="container">
+                <div class="hero-info">
+                    <h1 class="hero-title">Трактир «Пушкин»</h1>
+                    <div class="hero-info-footer">
+                        <div class="hero-type">₽₽₽ • Европейская</div>
+                        <div class="hero-time">40 - 50 мин</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tubs -->
+        <div class="tubs">
+
+            <input type="radio" name="tab-btn" data-num="0" id="tub-btn-1" value="" checked>
+            <input type="radio" name="tab-btn" data-num="1" id="tub-btn-2" value="">
+            <input type="radio" name="tab-btn" data-num="2" id="tub-btn-3" value="">
+            <input type="radio" name="tab-btn" data-num="3" id="tub-btn-4" value="">
+            <input type="radio" name="tab-btn" data-num="4" id="tub-btn-5" value="">
+            <input type="radio" name="tab-btn" data-num="5" id="tub-btn-6" value="">
+
+            <div class="tabs-labels container">
+                <label id="tab-btn-label-1" data-num=0 for="tab-btn-1">Закуски</label>
+                <label id="tab-btn-label-2" data-num=1 for="tab-btn-2">Салаты</label>
+                <label id="tab-btn-label-3" data-num=2 for="tab-btn-3">Супы</label>
+                <label id="tab-btn-label-4" data-num=3 for="tab-btn-4">Горячие блюда</label>
+                <label id="tab-btn-label-5" data-num=4 for="tab-btn-5">Гарниры</label>
+                <label id="tab-btn-label-6" data-num=5 for="tab-btn-6">Десерты</label>
+            </div>
+
+            <div class="hr-menu"></div>
+
+            <!-- <div class="header-with-arrows">
+                <div class="arrow-left-container">
+                    <img class="arrow-left" src="assets/arrow-left.svg" alt="&lt;">
+                </div>
+                <h2 id="header-with-arrows-name">Закуски</h2>
+                <div class="arrow-right-container">
+                    <img class="arrow-right" src="assets/arrow-right.svg" alt="&lt;">
+                </div>
+            </div> -->
+
+            <div class="tubs-contents container">
+                <div class="tub-content" id="menu-1">
+                    <h2 class="tub-content-header">Закуски</h2>
+                    <div class="dish-cards">
+                        <a class="dish-card" href="#">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Сельдь на бородинском хлебе</div>
+                                    <div class="dish-name-sub">С яйцом и огурцом</div>
+                                </div>
+                                <div class="dish-price">240 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-2.png" alt="Сельдь на бородинском хлебе">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Соленья ассорти</div>
+                                </div>
+                                <div class="dish-price">320 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-3.png" alt="Соленья ассорти">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Грибы маринованные</div>
+                                </div>
+                                <div class="dish-price">300 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-4.png" alt="Грибы маринованные">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Сало домашнее с горчицей</div>
+                                </div>
+                                <div class="dish-price">320 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-5.png" alt="Сало домашнее с горчицей">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Малосольная сёмга</div>
+                                    <div class="dish-name-sub"></div>
+                                </div>
+                                <div class="dish-price">390 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-6.png" alt="Малосольная сёмга">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Язык говяжий с хреном</div>
+                                </div>
+                                <div class="dish-price">350 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-7.png" alt="Язык говяжий с хреном">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- <div class="tub-content" id="menu-2">
+                    <h2 class="tub-content-header">Салаты</h2>
+                    <div class="dish-cards">
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Язык говяжий с хреном</div>
+                                </div>
+                                <div class="dish-price">350 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-7.png" alt="Язык говяжий с хреном">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Соленья ассорти</div>
+                                </div>
+                                <div class="dish-price">320 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-3.png" alt="Соленья ассорти">
+                        </a>
+                        <a class="dish-card" href="#">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Сельдь на бородинском хлебе</div>
+                                    <div class="dish-name-sub">С яйцом и огурцом</div>
+                                </div>
+                                <div class="dish-price">240 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-2.png" alt="Сельдь на бородинском хлебе">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Грибы маринованные</div>
+                                </div>
+                                <div class="dish-price">300 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-4.png" alt="Грибы маринованные">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Сало домашнее с горчицей</div>
+                                </div>
+                                <div class="dish-price">320 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-5.png" alt="Сало домашнее с горчицей">
+                        </a>
+                        <a href="#" class="dish-card">
+                            <div class="dish-desc">
+                                <div class="dish-title">
+                                    <div class="dish-name">Малосольная сёмга</div>
+                                    <div class="dish-name-sub"></div>
+                                </div>
+                                <div class="dish-price">390 ₽</div>
+                            </div>
+                            <img class="dish-pic" src="/Pushkin-images/p-photo-6.png" alt="Малосольная сёмга">
+                        </a>
+
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer-logo">
+                    <a href="#"><img src="/images/footer-logo.png" alt="footer-logo"></a>
+                </div>
+
+                <div class="footer-blocks">
+
+                    <div class="footer-block-1">
+
+                        <div class="language-picker">
+                            <div class="language-picker-form">
+                                <label for="language-picker-select"><img src="/images/world.png" alt="world"></label>
+                                <select class="language-form-select">
+                                    <option selected>Русский</option>
+                                    <option value="1">Английский</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="uber-eats-txt">
+                            <div class="uber-hex">
+                                <p>#</p>
+                            </div>
+                            <div class="uber-txt">
+                                <p>UberEats</p>
+                            </div>
+                        </div>
+
+                        <div class="block-img">
+
+                            <a class="block-img-fb" href="#" target="_blank"><img src="/images/facebook.png"
+                                    alt="facebook"></a>
+                            <a class="block-img-twit" href="#" target="_blank"><img src="/images/twitter.png"
+                                    alt="twitter"></a>
+                            <a class="block-img-inst" href="#" target="_blank"><img src="/images/instagram.png"
+                                    alt="instagram"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-block-2">
+                        <div class="block-links-2">
+                            <p><a class="block-link" href="#">Об UberEats</a></p>
+                            <p><a class="block-link" href="#">Станьте партнёром по доставке</a></p>
+                            <p class="last-link"><a class="block-link" href="#">Станьте
+                                    парнёром-рестораном</a></p>
+                        </div>
+                    </div>
+
+                    <div class="footer-block-3">
+                        <div class="block-links-3">
+                            <p class="first-link"><a class="block-link" href="#">Все города</a></p>
+                            <p><a class="block-link" href="#">Цены</a></p>
+                            <p><a class="block-link" href="#">Помощь</a></p>
+                            <p><a class="block-link" href="#">FAQs</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stores">
+                    <div class="app-store">
+                        <a href="#" target="_blank"><img src="/images/App_Store.png" alt="app-store"></a>
+                    </div>
+                    <div class="google-play">
+                        <a href="#" target="_blank"><img src="/images/Google_Play.png" alt="google-play"></a>
+                    </div>
+                </div>
+
+                <div class="copyrights">
+                    <p><a class="copyright-txt" href="#">© 2025 Uber Technologies Inc.</a></p>
+                    <p><a class="copyright-txt" href="#">Обработка персональных данных</a></p>
+                    <p><a class="copyright-txt" href="#">Пользовательское соглашение</a></p>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- <section>
+
+
+        <div class="tabs-contents container">
+            <div id="menu-1" class="tab-content">
+                <h2 class="header">Закуски</h2>
+                <div class="dish-cards">
+                    <a href="#" class="dish-card">
+                        <div class="dish-desc">
+                            <div class="dish-title">
+                                <div class="dish-name">Сельдь на бородинском хлебе</div>
+                                <div class="dish-name-sub">С яйцом и огурцом</div>
+                            </div>
+                            <div class="dish-price">240</div>
+                        </div>
+                        <img class="dish-pic" src="/Pushkin-images/p-photo-2.png" alt="Сельдь на бородинском хлебе">
+                    </a>
+                    <a href="#" class="dish-card">
+                        <div class="dish-desc">
+                            <div class="dish-title">
+                                <div class="dish-name">Соленья ассорти</div>
+                            </div>
+                            <div class="dish-price">320</div>
+                        </div>
+                        <img class="dish-pic" src="/Pushkin-images/p-photo-3.png" alt="Соленья ассорти">
+                    </a>
+                    <a href="#" class="dish-card">
+                        <div class="dish-desc">
+                            <div class="dish-title">
+                                <div class="dish-name">Грибы маринованные</div>
+                            </div>
+                            <div class="dish-price">300</div>
+                        </div>
+                        <img class="dish-pic" src="/Pushkin-images/p-photo-4.png" alt="Грибы маринованные">
+                    </a>
+                    <a href="#" class="dish-card">
+                        <div class="dish-desc">
+                            <div class="dish-title">
+                                <div class="dish-name">Сало домашнее с горчицей</div>
+                            </div>
+                            <div class="dish-price">320</div>
+                        </div>
+                        <img class="dish-pic" src="/Pushkin-images/p-photo-5.png" alt="Сало домашнее с горчицей">
+                    </a>
+                    <a href="#" class="dish-card">
+                        <div class="dish-desc">
+                            <div class="dish-title">
+                                <div class="dish-name">Малосольная сёмга</div>
+                                <div class="dish-name-sub"></div>
+                            </div>
+                            <div class="dish-price">390</div>
+                        </div>
+                        <img class="dish-pic" src="/Pushkin-images/p-photo-6.png" alt="Малосольная сёмга">
+                    </a>
+                    <a href="#" class="dish-card">
+                        <div class="dish-desc">
+                            <div class="dish-title">
+                                <div class="dish-name">Язык говяжий с хреном</div>
+                            </div>
+                            <div class="dish-price">350</div>
+                        </div>
+                        <img class="dish-pic" src="/Pushkin-images/p-photo-7.png" alt="Язык говяжий с хреном">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <div class="pt-5 pb-3">
+                    <a href="#"><img src="/images/footer-logo.png" alt="footer-logo"></a>
+                </div>
+            </div>
+            <div class="border-top py-4">
+                <div class="row fs-5">
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div class="language-picker">
+                            <div class="language-picker-form">
+                                <label for="language-picker-select"><img src="/images/world.png" alt="world"></label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Русский</option>
+                                    <option value="1">Английский</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="block-img">
+                            <div class="uber-eats-txt">
+                                <div class="uber-hex">
+                                    <h4>#</h4>
+                                </div>
+                                <div class="uber-txt">
+                                    <h4>UberEats</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-med">
+                            <div class="facebook">
+                                <a href="#" target="_blank"><img src="/images/facebook.png" alt="fb"></a>
+                            </div>
+                            <div class="twitter">
+                                <a href="#" target="_blank"><img src="/images/twitter.png" alt="twitter"></a>
+                            </div>
+                            <div class="instagram">
+                                <a href="#" target="_blank"><img src="/images/instagram.png" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Об
+                                    UberEats</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Станьте
+                                    партнёром по доставке</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Станьте
+                                    парнёром-рестораном</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-xs-12 pb-4">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Все
+                                    города</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Цены</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Помощь</a>
+                            </li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-top">
+                    <div class="d-flex align-items-center justify-content-center mb-5 mt-5">
+                        <div class="app-store">
+                            <a href="#" target="_blank"><img src="/images/App_Store.png" alt="app-store"></a>
+                        </div>
+                        <div class="google-play">
+                            <a href="#" target="_blank"><img src="/images/Google_Play.png" alt="google-play"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="border-top pt-4 pb-1">
+                        <div class="row fs-6">
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <p class="copyrights">© 2025 Uber Technologies Inc.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <p class="copyrights"><a href="#" class="nav-link p-0">Обработка персональных данных</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <p class="copyrights">Пользовательское соглашение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </footer> -->
+
+
+</body>
+
+</html>
