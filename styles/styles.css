@@ -191,6 +191,8 @@ header {
     background-color: #FFFFFF;
 
     transition: all 0.3s linear;
+    overflow: hidden;
+    position: relative;
 }
 
 .card:hover {
@@ -205,6 +207,12 @@ header {
 
 .card-img {
     border-radius: 12px 12px 0 0;
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05);
 }
 
 .card-header {
